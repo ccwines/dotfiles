@@ -1,0 +1,10 @@
+# Fix Java GUI applications for tiling window managers
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
+export PATH=~/.npm-global/bin:$PATH
+
+export DOCKER_HOST=unix:///var/run/docker.sock
+
+export EDITOR=nvim
