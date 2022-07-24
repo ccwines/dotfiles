@@ -10,13 +10,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 [ -f ~/.xprofile ] && .  ~/.xprofile
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
-
     xrdb -merge $sysresources
 
 fi
@@ -26,13 +19,6 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
-
     xrdb -merge "$userresources"
 
 fi
@@ -79,7 +65,7 @@ slstatus &
 
 nm-applet &
 
-gromit-mpx &
+# gromit-mpx &
 
 exec dwm
 
